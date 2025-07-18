@@ -21,7 +21,7 @@ CHAT_HISTORY_FILE = os.path.join(SAVE_DIR, "chat_history.txt")
 # Define embedding model and Gemini model configuration
 EMBEDDING_MODEL_NAME = "BAAI/bge-base-en-v1.5"
 COLLECTION_NAME = "faq_data"
-GENAI_API_KEY = "AIzaSyCEqHIX2LSUuTSnb2jt38ngCUBFV2ANwWQ"
+GENAI_API_KEY = "Your-gemini-key"
 
 genai.configure(api_key=GENAI_API_KEY)
 gemini_model = genai.GenerativeModel("models/gemini-2.5-flash")
