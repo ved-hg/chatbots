@@ -16,12 +16,12 @@ import hashlib
 from typing import List, Dict, Any
 
 # Configure Gemini
-API_KEY = "AIzaSyCEqHIX2LSUuTSnb2jt38ngCUBFV2ANwWQ"
+API_KEY = "your-gemini-key"
 genai.configure(api_key=API_KEY)
 gemini_model = genai.GenerativeModel("gemini-2.0-flash")
 
 # Initialize Cohere
-cohere_client = cohere.Client("EGJuKn6A9CUJa24d252WuszoFYgY8XWOrUUbW8bF")
+cohere_client = cohere.Client("your-cohere-key")
 
 # Prompts
 IMAGE_PROMPT = (
