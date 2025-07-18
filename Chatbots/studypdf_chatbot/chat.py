@@ -13,12 +13,12 @@ from PIL import Image
 CHROMA_DIR = "chroma_storage"
 IMAGE_DIR = "extracted_images"
 COLLECTION_NAME = "pdf_data"
-GEMINI_API_KEY = "AIzaSyCEqHIX2LSUuTSnb2jt38ngCUBFV2ANwWQ"
+GEMINI_API_KEY = "your-gemini-key"
 
 # Embedding Wrapper
 class CohereEmbeddings:
     def __init__(self):
-        self.client = cohere.Client("EGJuKn6A9CUJa24d252WuszoFYgY8XWOrUUbW8bF")
+        self.client = cohere.Client("your-cohere-key")
 
     def embed_documents(self, texts):
         response = self.client.embed(
